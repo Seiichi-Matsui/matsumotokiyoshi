@@ -1,0 +1,34 @@
+/**
+* Reinstate scrolling for non-JS clients
+*/
+.simplebar-content-wrapper {
+    scrollbar-width: auto;
+    -ms-overflow-style: auto;
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+display: initial;
+width: initial;
+height: initial;
+}
+
+.simplebar-placeholder {
+    height: 0 !important;
+}
+
+.simplebar-scrollbar {
+	background: #808080;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: unset;
+    height: 14px;
+    border-radius: 7px;
+
+}
+.simplebar-track.simplebar-horizontal {
+height: 14px;
+background: linear-gradient(rgba(0,0,0,0) 40%, #808080 0, #808080 60%, rgba(0,0,0,0) 0);
+}

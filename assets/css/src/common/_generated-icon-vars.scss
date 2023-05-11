@@ -1,0 +1,111 @@
+$icons: (
+
+	"minus": unquote("\"\\e005\""),
+
+	"plus": unquote("\"\\e006\""),
+
+	"null": unquote("\"\\e000\""),
+
+	"up": unquote("\"\\e001\""),
+
+	"left": unquote("\"\\e002\""),
+
+	"down": unquote("\"\\e003\""),
+
+	"right": unquote("\"\\e004\""),
+
+);
+
+@function getIconContent( $key ) {
+	@each $pair in $icons {
+		@if nth( $pair, 1 ) == $key {
+			@return nth( $pair, 2 );
+		}
+	}
+
+	@return null;
+}
+
+@mixin icon( $name ) {
+	content: getIconContent( $name );
+	display: inline-block;
+	font-family: "icon";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-transform: none;
+	vertical-align: middle;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin initIcon() {
+	@font-face {
+		font-family: "icon";
+		font-style: normal;
+		font-weight: normal;
+		src: url( "data:font/woff2;base64,d09GMgABAAAAAAQIAAsAAAAACdgAAAO5AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHIFSBmAAhUQKgmSCXQE2AiQDYAsyAAQgBYQWB4EYG9oIEVWcS8m+PODJpOyei8CNokRzJNA9VlT1vYtr1maE4eMK720E9GuP7jv6iAECyQCWNRSE6lTIKmDhMidMZHW2pmMNY6KQXbLnW8/yHUnXL/L5At4jJAGw23AgDMTk8GRLsrwSl01Nq1anbRO4WAkEdUvnCicviBtzoQXDQdCiz/+9ytmcE5B5M5/FZY2Xtd/5lLm7N0hFCzTWBGmFlhWsplXqMHZpma8RUDbfMtGaYsse9SvVnWtGSqjrA8HAcGU4f1KRyUok8GZFwT0FXZMttMQmB5wr2ilIlZRVVKPtsURFXbM3ZJGa14wk6hV4qaqhqTU6k+joKkdooTPWNyhgBcWOPTUkbeudNSV8SLHTQbScb18qM4FIGlMfsOPc2jN+0eaZF1S8XvAU6E+NvWPMRkL4sbj6MRayZLHy6MQ1VBUXdpWLbrjrfp59++aMK25FBJzq8KCqb6zJGqO9fOsiWUmd5nVG91S1VHS3MZ3K8L8fRISMumW70exHTb1Y7owlUm2xfwLqr0KYDOsDnDHQxlk0cA5NnEcfFzDARZRwBXVcRRHXUMZ1dHADNdxCD7dRxR20cBcV3Fd3yRFi8kBIyCNCSh4TMvKEUCBPCYE8O0MEhmD+9EXH67DYqQZBZFnxfNQTk2qStNuW2CjvP4XycwxVgmYxN9vzHOzlF3eHZQUc/1bc/Y/fKZxMt6RKKt3FhlnYvbT/xe3gvblidnl7cp6ZsZ/a8Gk/gMcbFi0iPQwv1BLdGSfvwyd7OCVanLa/fh3bRVlrImF7ooWDD6PV2wlfvvTtpKQ04YR4erAK9woTiW8voV8jO4xfp3JPbHLM2lbw2Emw/I+jklO/ERD47+fZfx2vS/53xgvkr86Ao15k+Yt7QUNiKWvG9Q4OC+ZkLKpOwwD+9mQ+EKGsjNeJa/p1SsHwAzCiF9geeGLP34C8RDRAqmIcMkUzUTbLwrMrOo6KhaQkaLoBEKl7gVjTO14i+h6pvp+QaUL8cPL8b3J2CX8aa0ifIFfsgqpYcTryJ7IfCpBGSfwpJRrkSrCF+gt+7jIRAmKroSi4GyplwbEdsZGoF3F5HFPWCVFj9WJorCHrp+WKXVAVoxmjpk9kP2wcpCJJBV5JTSX9SrC9Sv0Ffu4yIoT2IrYaFM3aUSkrUZe904iNRPoGZZeLtZWoKo2G9+uLsjbvw1sOg0Ci0BgsDk8gksgUKk03TMt2XI+3tldjgt+4Md/PvFKrcBvVJJt232bL6XpZagMj8BwFEdGy3linrwUA" ) format( "woff" );
+	}
+
+	.Icon {
+		display: inline-block;
+		font-family: "icon";
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		line-height: 1;
+		text-transform: none;
+		vertical-align: middle;
+		speak: none;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		// stylelint-disable
+		// For With CJK Text ===========
+		position: relative;
+		top: -0.1em;
+		// stylelint-enable
+
+		&::before {
+			font-family: inherit;
+			font-style: inherit;
+			font-weight: inherit;
+			font-variant: inherit;
+			line-height: inherit;
+			text-transform: inherit;
+			vertical-align: inherit;
+		}
+	}
+
+
+	.Icon.-minus:before {
+		content: unquote("\"\\e005\"");
+	}
+
+	.Icon.-plus:before {
+		content: unquote("\"\\e006\"");
+	}
+
+	.Icon.-null:before {
+		content: unquote("\"\\e000\"");
+	}
+
+	.Icon.-up:before {
+		content: unquote("\"\\e001\"");
+	}
+
+	.Icon.-left:before {
+		content: unquote("\"\\e002\"");
+	}
+
+	.Icon.-down:before {
+		content: unquote("\"\\e003\"");
+	}
+
+	.Icon.-right:before {
+		content: unquote("\"\\e004\"");
+	}
+
+}
