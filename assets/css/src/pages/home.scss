@@ -198,7 +198,7 @@ a {
         position: relative;
         line-height: 0;
 
-        &__ArrowLeft {
+        &__BtnLeft {
             position: absolute;
             top: .3em;
             left: 0;
@@ -209,7 +209,7 @@ a {
             height: fit-content;
         }
     
-        &__ArrowRight {
+        &__BtnRight {
             position: absolute;
             top: .3em;
             right: 0;

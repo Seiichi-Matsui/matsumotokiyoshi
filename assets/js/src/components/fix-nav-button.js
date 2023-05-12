@@ -1,6 +1,8 @@
+window.addEventListener("load", function() {
+    
 const left = document.getElementById('btnLeft');
 const right = document.getElementById('btnRight');
-const elmDiv = document.querySelector('.simplebar-content');
+const elmDiv = document.querySelector('.simplebar-content-wrapper');
 
 left.addEventListener("click", function() {
     elmDiv.scrollBy({
@@ -39,3 +41,6 @@ right.addEventListener("click", function() {
 //         // right.classList.add('navButtonLeftActiv');
 //     }
 // });
+
+
+ });
