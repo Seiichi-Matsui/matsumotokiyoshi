@@ -66,9 +66,15 @@ function categoryFilter() {
     NavItemCategories.forEach((itemCategory) => {
     const navitemcategoty = itemCategory.dataset.navitemcategoty;
 
+    itemCategories.forEach((itemCategory) => {
+        itemCategory.classList.add('is-show');
+    });
+
     if (navitemcategoty == 'all') {
         itemCategory.classList.add('is-active');
-      console.log(itemCategory);
+    //   console.log(itemCategory);
+    } else {
+        itemCategory.classList.remove('is-active');
     }
     });
 
