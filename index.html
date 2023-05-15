@@ -25,9 +25,9 @@
 	<h2 class="Arrow">
 		セール対象商品
 	</h2>
-	<p>
+	<!-- <p>
 		カテゴリーを絞り込み
-	</p>
+	</p> -->
 
 	<ul class="Read__FilterItem">
 
@@ -37,30 +37,438 @@
 			 data-filter="all" 
 			 type="button"
 			 >
-				全ての商品
+				ALL
 			</button>
 		</li>
 
 		<li>
 			<button 
 			 class="FilterButton" 
-			 data-filter="everydayItems" 
+			 data-filter="specialPrice" 
 			 type="button"
 			>
-				日用品
+				SPECIAL PRICE
 			</button>
 		</li>
 
 		<li>
 			<button
 			 class="FilterButton"
-			 data-filter="pharmaceuticals"
+			 data-filter="seasonCare"
 			 type="button"
 			>
-				医薬品
+				シーズンケア
 			</button>
 		</li>
 
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="InsectBite" 
+			 type="button"
+			 >
+				虫さされ・虫よけ
+			</button>
+		</li>
+	</ul>
+
+	<ul class="Read__FilterItem">
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="pestControl" 
+			 type="button"
+			 >
+				害虫対策
+			</button>
+		</li>
+
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="beautyCare" 
+			 type="button"
+			 >
+				ビューティーケア
+			</button>
+		</li>
+
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="dailyNecessities" 
+			 type="button"
+			 >
+				日用品
+			</button>
+		</li>
+
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="pharmaceuticals" 
+			 type="button"
+			 >
+				医薬品
+			</button>
+		</li>
+	</ul>
+
+	<!-- ビューティーケア -->
+	<ul class="Read__Category" data-navFilter="beautyCare">
+		<li>
+			<button 
+			class="FilterButton is-active"
+			data-NavItemCategoty="all"
+			type="button"
+			>
+				ALL
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="hairCare"
+			type="button"
+			>
+				ヘアケア
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="skinCare"
+			type="button"
+			>
+				スキンケア
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="oralCare"
+			type="button"
+			>
+				オーラルケア
+			</button>
+			
+		</li>
+	</ul>
+	
+	<!-- 日用品 -->
+	<ul class="Read__Category" data-navFilter="dailyNecessities">
+
+		<li>
+			<button 
+			class="FilterButton is-active"
+			data-NavItemCategoty="all"
+			type="button"
+			>
+			ALL
+			</button>
+			
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="washing"
+			type="button"
+			>
+			洗濯用品
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="kitchen"
+			type="button"
+			>
+			キッチン用品
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="insectRepellent"
+			type="button"
+			>
+			防虫・防湿剤
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="cleaning"
+			type="button"
+			>
+			掃除用品
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="odor"
+			type="button"
+			>
+			気になる臭いに
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="paper"
+			type="button"
+			>
+			紙・トイレロール
+			</button>
+		</li>
+	</ul>
+	
+	<!-- 医薬品 -->
+	<ul class="Read__Category" data-navFilter="pharmaceuticals">
+		<li>
+			<button 
+			class="FilterButton is-active"
+			data-NavItemCategoty="all"
+			type="button"
+			>
+			ALL
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="AthleteFoot"
+			type="button"
+			>
+			水虫
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="cold"
+			type="button"
+			>
+			風邪対策
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="eczema"
+			type="button"
+			>
+			湿疹・皮膚炎用薬
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="headache"
+			type="button"
+			>
+			頭痛
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="stain"
+			type="button"
+			>
+			しみ・そばかす
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="roughSkin"
+			type="button"
+			>
+			肌荒れに
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="tired"
+			type="button"
+			>
+			疲れに
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="gastrointestinal"
+			type="button"
+			>
+			胃腸薬
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="muscle"
+			type="button"
+			>
+			筋肉・関節の痛みに
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="drinkAgent"
+			type="button"
+			>
+			ドリンク剤
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="antidiarrheal"
+			type="button"
+			>
+			下痢止め
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="laxatives"
+			type="button"
+			>
+			便秘薬
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="herbalMedicine"
+			type="button"
+			>
+			漢方薬
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="eyeCare"
+			type="button"
+			>
+			アイケア
+			</button>
+		</li>
+
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="designatedQuasiDrug"
+			type="button"
+			>
+			指定医薬部外品
+			</button>
+		</li>
+	</ul>
+
+	<ul class="Read__FilterItem">
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="mensCare" 
+			 type="button"
+			 >
+				メンズケア
+			</button>
+		</li>
+
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="feminineCare" 
+			 type="button"
+			 >
+				フェミニンケア
+			</button>
+		</li>
+
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="baby" 
+			 type="button"
+			 >
+				ベビー
+			</button>
+		</li>
+
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="nursingCare" 
+			 type="button"
+			 >
+				介護用品
+			</button>
+		</li>
+	</ul>
+
+	<ul class="Read__FilterItem">
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="pet" 
+			 type="button"
+			 >
+				ペット
+			</button>
+		</li>
+
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="contactCare" 
+			 type="button"
+			 >
+				コンタクトケア
+			</button>
+		</li>
+
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="healthyFood" 
+			 type="button"
+			 >
+				健康食品
+			</button>
+		</li>
+		
 		<li>
 			<button 
 			 class="FilterButton"
@@ -72,119 +480,192 @@
 		</li>
 	</ul>
 
-	<ul class="Read__Category">
-		<li class="is-show" data-category="pharmaceuticals">
-			<a href="#medical-supplies">医薬品</a>
+	<!-- 健康食品 -->
+	<ul class="Read__Category" data-navFilter="healthyFood">
+		<li>
+			<button 
+			class="FilterButton is-active"
+			data-NavItemCategoty="all"
+			type="button"
+			>
+			ALL
+			</button>
 		</li>
 
-		<li class="is-show" data-category="food">
-			<a href="#health-foods">健康食品</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="softDrink"
+			type="button"
+			>
+			清涼飲料水
+			</button>
 		</li>
 
-		<li class="is-show" data-category="pharmaceuticals">
-			<a href="#feminine-care">フェミニンケア</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="designatedQuasiDrug"
+			type="button"
+			>
+			指定医薬部外品
+			</button>
 		</li>
 
-		<li class="is-show" data-category="everydayItems">
-			<a href="#">介護用品</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="aminoVital"
+			type="button"
+			>
+			アミノバイタルシリーズ
+			</button>
 		</li>
 
-		<li class="is-show" data-category="everydayItems">
-			<a href="#">ペット</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="dianatura"
+			type="button"
+			>
+			ディアナチュラシリーズ
+			</button>
+		</li>
+	</ul>
+
+	<!-- 食品 -->
+	<ul class="Read__Category" data-navFilter="food">
+		<li>
+			<button 
+			class="FilterButton is-active"
+			data-NavItemCategoty="all"
+			type="button"
+			>
+			ALL
+			</button>
 		</li>
 
-		<li class="is-show" data-category="everydayItems">
-			<a href="#">ベビー</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="drink"
+			type="button"
+			>
+			ドリンク
+			</button>
 		</li>
 
-		<li class="is-show" data-category="pharmaceuticals">
-			<a href="#">コンタクトケア</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="luxuryGoods"
+			type="button"
+			>
+			嗜好品
+			</button>
 		</li>
 
-		<li class="is-show" data-category="pharmaceuticals">
-			<a href="#">メンズケア</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="snack"
+			type="button"
+			>
+			お菓子
+			</button>
 		</li>
 
-		<li class="is-show" data-category="everydayItems">
-			<a href="#">日用品</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="serial"
+			type="button"
+			>
+			シリアル
+			</button>
 		</li>
 
-		<li class="is-show" data-category="pharmaceuticals">
-			<a href="#">スキンケア</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="seasoning"
+			type="button"
+			>
+			調味料・食料品
+			</button>
 		</li>
 
-		<li class="is-show" data-category="pharmaceuticals">
-			<a href="#">オーラルケア</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="instantNoodles"
+			type="button"
+			>
+			インスタント麺
+			</button>
 		</li>
 
-		<li class="is-show" data-category="pharmaceuticals">
-			<a href="#">ヘアケア</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="dailyAccessories"
+			type="button"
+			>
+			日配品
+			</button>
 		</li>
 
-		<li class="is-show" data-category="everydayItems">
-			<a href="#">虫刺され・虫除け</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="frozenFood"
+			type="button"
+			>
+			冷凍食品
+			</button>
 		</li>
 
-		<li class="is-show" data-category="everydayItems">
-			<a href="#">害虫対策</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="liquor"
+			type="button"
+			>
+			お酒
+			</button>
 		</li>
 
-		<li class="is-show" data-category="pharmaceuticals">
-			<a href="#">シーズンケア</a>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="rice"
+			type="button"
+			>
+			お米
+			</button>
 		</li>
 
-		<li class="is-show" data-category="food">
-			<a href="#">食品</a>
-		</li>
+		<li>
+			<button 
+			class="FilterButton"
+			data-NavItemCategoty="delicacy"
+			type="button"
+			>
+			珍味
+			</button>
 	</ul>
 </section>
 
-<section class="Products">
-	<h3>
-		ヘルスケア・健康食品
+
+<!-------------------- 商品 -------------------->
+
+<!-- SPECIAL PRICE -->
+<section class="Products is-show" data-filterProducts="specialPrice">
+	<h3 id="feminine-care">
+		スペシャルプライス
 	</h3>
 
-	<h4 id="medical-supplies" class="Arrow">
-		医薬品
-	</h4>
-
-	<ul class="Products__Product">
-		<li>
-			<img
-				src="./assets/img/product/product01.png"
-				alt="スマイル40">
-		</li>
-
-		<li>
-			<img
-				src="./assets/img/product/product02.png"
-				alt="スマイル40">
-		</li>
-
-		<li>
-			<img
-				src="./assets/img/product/product03.png"
-				alt="ロートビタ40">
-		</li>
-
-		<li>
-			<img
-				src="./assets/img/product/product04.png"
-				alt="ロートクール40">
-		</li>
-
-		<li>
-			<img
-				src="./assets/img/product/product05.png"
-				alt="新ルル">
-		</li>
-	</ul>
-
-	<h4 id="health-foods" class="Arrow">
-		健康食品
-	</h4>
-
-	<ul class="Products__Product">
+	<ul class="Products__ItemCategory sub_title_none is-show">
 		<li>
 			<img
 				src="./assets/img/product/product01.png"
@@ -217,12 +698,1110 @@
 	</ul>
 </section>
 
-<section class="Products">
+
+<!-- シーズンケアアイテム -->
+<section class="Products is-show" data-filterProducts="seasonCare">
+	<h3 id="feminine-care">
+		シーズンケアアイテム
+	</h3>
+
+	<ul class="Products__ItemCategory sub_title_none is-show">
+		<li>
+			<img
+				src="./assets/img/product/product01.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product02.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product03.png"
+				alt="ロートビタ40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product04.png"
+				alt="ロートクール40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product05.png"
+				alt="新ルル">
+		</li>
+	</ul>
+</section>
+
+
+<!-- 虫さされ・虫よけ -->
+<section class="Products is-show" data-filterProducts="InsectBite">
+	<h3 id="feminine-care">
+		虫さされ・虫よけ
+	</h3>
+
+	<ul class="Products__ItemCategory sub_title_none is-show">
+		<li>
+			<img
+				src="./assets/img/product/product01.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product02.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product03.png"
+				alt="ロートビタ40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product04.png"
+				alt="ロートクール40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product05.png"
+				alt="新ルル">
+		</li>
+	</ul>
+</section>
+
+
+<!-- 害虫対策 -->
+<section class="Products is-show" data-filterProducts="pestControl">
+	<h3 id="feminine-care">
+		害虫対策
+	</h3>
+
+	<ul class="Products__ItemCategory sub_title_none is-show">
+		<li>
+			<img
+				src="./assets/img/product/product01.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product02.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product03.png"
+				alt="ロートビタ40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product04.png"
+				alt="ロートクール40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product05.png"
+				alt="新ルル">
+		</li>
+	</ul>
+</section>
+
+
+<!-- ビューティケア -->
+<section class="Products is-show" data-filterProducts="beautyCare">
+	<h3>
+		ビューティケア
+	</h3>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="hairCare">
+		<h4 id="medical-supplies" class="Arrow">
+			ヘアケア
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="skinCare">
+		<h4 id="health-foods" class="Arrow">
+			スキンケア
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="oralCare">
+		<h4 id="health-foods" class="Arrow">
+			オーラルケア
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+<!-- 日用品 -->
+<section class="Products is-show" data-filterProducts="dailyNecessities">
+	<h3>
+		日用品
+	</h3>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="washing">
+		<h4 id="medical-supplies" class="Arrow">
+			洗濯用品
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="kitchen">
+		<h4 id="health-foods" class="Arrow">
+			キッチン用品
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="insectRepellent">
+		<h4 id="health-foods" class="Arrow">
+			防虫・除湿剤
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="cleaning">
+		<h4 id="health-foods" class="Arrow">
+			掃除用品
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="odor">
+		<h4 id="health-foods" class="Arrow">
+			気になる臭いに
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="paper">
+		<h4 id="health-foods" class="Arrow">
+			紙・トイレロール
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+<!-- 医薬品 -->
+<section class="Products is-show" data-filterProducts="pharmaceuticals">
+	<h3>
+		医薬品
+	</h3>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="AthleteFoot">
+		<h4 id="medical-supplies" class="Arrow">
+			水虫
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="cold">
+		<h4 id="health-foods" class="Arrow">
+			風邪対策
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="eczema">
+		<h4 id="health-foods" class="Arrow">
+			湿疹・皮膚炎用薬
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="headache">
+		<h4 id="health-foods" class="Arrow">
+			頭痛
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="stain">
+		<h4 id="health-foods" class="Arrow">
+			しみ・そばかす
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="roughSkin">
+		<h4 id="health-foods" class="Arrow">
+			肌荒れに
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="tired">
+		<h4 id="health-foods" class="Arrow">
+			疲れに
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="gastrointestinal">
+		<h4 id="health-foods" class="Arrow">
+			胃腸薬
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="muscle">
+		<h4 id="health-foods" class="Arrow">
+			筋肉・関節の痛みに
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="drinkAgent">
+		<h4 id="health-foods" class="Arrow">
+			ドリンク剤
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="antidiarrheal">
+		<h4 id="health-foods" class="Arrow">
+			下痢止め
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="laxatives">
+		<h4 id="health-foods" class="Arrow">
+			便秘薬
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="herbalMedicine">
+		<h4 id="health-foods" class="Arrow">
+			漢方薬
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="eyeCare">
+		<h4 id="health-foods" class="Arrow">
+			アイケア
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<class class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="designatedQuasiDrug">
+		<h4 id="health-foods" class="Arrow">
+			指定医薬部外品
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</class>
+</section>
+
+
+<!-- メンズケア -->
+<section class="Products is-show" data-filterProducts="mensCare">
+	<h3 id="feminine-care">
+		メンズケア
+	</h3>
+
+	<ul class="Products__ItemCategory sub_title_none is-show">
+		<li>
+			<img
+				src="./assets/img/product/product01.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product02.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product03.png"
+				alt="ロートビタ40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product04.png"
+				alt="ロートクール40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product05.png"
+				alt="新ルル">
+		</li>
+	</ul>
+</section>
+
+
+<!-- フェミニンケア -->
+<section class="Products is-show" data-filterProducts="feminineCare">
 	<h3 id="feminine-care">
 		フェミニンケア
 	</h3>
 
-	<ul class="Products__Product sub_title_none">
+	<ul class="Products__ItemCategory sub_title_none is-show">
 		<li>
 			<img
 				src="./assets/img/product/product01.png"
@@ -255,7 +1834,593 @@
 	</ul>
 </section>
 
-<div class="FixNav">
+
+<!-- ベビー -->
+<section class="Products is-show" data-filterProducts="baby">
+	<h3 id="feminine-care is-show">
+		ベビー
+	</h3>
+
+	<ul class="Products__ItemCategory sub_title_none">
+		<li>
+			<img
+				src="./assets/img/product/product01.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product02.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product03.png"
+				alt="ロートビタ40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product04.png"
+				alt="ロートクール40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product05.png"
+				alt="新ルル">
+		</li>
+	</ul>
+</section>
+
+
+<!-- 介護用品 -->
+<section class="Products is-show" data-filterProducts="nursingCare">
+	<h3 id="feminine-care">
+		介護用品
+	</h3>
+
+	<ul class="Products__ItemCategory sub_title_none is-show">
+		<li>
+			<img
+				src="./assets/img/product/product01.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product02.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product03.png"
+				alt="ロートビタ40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product04.png"
+				alt="ロートクール40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product05.png"
+				alt="新ルル">
+		</li>
+	</ul>
+</section>
+
+
+<!-- ペット -->
+<section class="Products" data-filterProducts="pet">
+	<h3 id="feminine-care is-show">
+		ペット
+	</h3>
+
+	<ul class="Products__ItemCategory sub_title_none is-show">
+		<li>
+			<img
+				src="./assets/img/product/product01.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product02.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product03.png"
+				alt="ロートビタ40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product04.png"
+				alt="ロートクール40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product05.png"
+				alt="新ルル">
+		</li>
+	</ul>
+</section>
+
+
+<!-- コンタクトケア -->
+<section class="Products is-show" data-filterProducts="contactCare">
+	<h3 id="feminine-care">
+		コンタクトケア
+	</h3>
+
+	<ul class="Products__ItemCategory sub_title_none is-show">
+		<li>
+			<img
+				src="./assets/img/product/product01.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product02.png"
+				alt="スマイル40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product03.png"
+				alt="ロートビタ40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product04.png"
+				alt="ロートクール40">
+		</li>
+
+		<li>
+			<img
+				src="./assets/img/product/product05.png"
+				alt="新ルル">
+		</li>
+	</ul>
+</section>
+
+
+<!-- 健康食品 -->
+<section class="Products is-show" data-filterProducts="healthyFood">
+	<h3>
+		健康食品
+	</h3>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="softDrink">
+		<h4 id="medical-supplies" class="Arrow">
+			清涼飲料水
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="designatedQuasiDrug">
+		<h4 id="health-foods" class="Arrow">
+			指定医薬部外品
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="aminoVital">
+		<h4 id="health-foods" class="Arrow">
+			アミノバイタルシリーズ
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="dianatura">
+		<h4 id="health-foods" class="Arrow">
+			ディアナチュラシリーズ
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+<!-- 食品 -->
+<section class="Products is-show" data-filterProducts="food">
+	<h3>
+		食品
+	</h3>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="drink">
+		<h4 id="medical-supplies" class="Arrow">
+			ドリンク
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="luxuryGoods">
+		<h4 id="health-foods" class="Arrow">
+			嗜好品
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product03.png"
+					alt="ロートビタ40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product04.png"
+					alt="ロートクール40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product05.png"
+					alt="新ルル">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="snack">
+		<h4 id="health-foods" class="Arrow">
+			お菓子
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="serial">
+		<h4 id="health-foods" class="Arrow">
+			シリアル
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="seasoning">
+		<h4 id="health-foods" class="Arrow">
+			調味料・食料品
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="instantNoodles">
+		<h4 id="health-foods" class="Arrow">
+			インスタント麺
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="dailyAccessories">
+		<h4 id="health-foods" class="Arrow">
+			日配品
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="frozenFood">
+		<h4 id="health-foods" class="Arrow">
+			冷凍食品
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="liquor">
+		<h4 id="health-foods" class="Arrow">
+			お酒
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="rice">
+		<h4 id="health-foods" class="Arrow">
+			お米
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+		</ul>
+	</div>
+
+	<div class="Products__ItemCategoryWrapper is-show" data-filterItemCategory="delicacy">
+		<h4 id="health-foods" class="Arrow">
+			珍味
+		</h4>
+
+		<ul class="Products__ItemCategory">
+			<li>
+				<img
+					src="./assets/img/product/product01.png"
+					alt="スマイル40">
+			</li>
+
+			<li>
+				<img
+					src="./assets/img/product/product02.png"
+					alt="スマイル40">
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+
+<!-- <div class="FixNav">
 	<p>
 		カテゴリを検索
 		<img src="./assets/img/search.svg" alt="">
@@ -345,7 +2510,7 @@
 		/>
 	</div>
 </div>
-</div>
+</div> -->
 
 <script src="./assets/js/script.js"></script>
 </body>

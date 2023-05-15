@@ -6,6 +6,8 @@
 $bg-color: #FEFFED;
 $bg-color-section: #ED9196;
 $bg-color-contents: #E7584A;
+$bg-nav-item: rgba(237, 150, 140, .2);
+$nav-item: #ED9096;
 
 .BgColor {
     box-sizing: border-box;
@@ -107,9 +109,9 @@ button{
         text-align: center;
     }
 
-    &__Category,
     &__FilterItem {
         margin-top: 0;
+        margin-bottom: 0;
         display: flex;
         flex-wrap: wrap;
         padding-left: 0;
@@ -119,12 +121,10 @@ button{
             box-sizing: border-box;
             width: 24.25%;
             height: 50px;
-            background-color: #fff;
+            background-color: #FBE9EA;
             margin-top: 1%;
-            border-radius: 5px;
             border: 1px solid #979795;
 
-            a,
             button {
                 margin: 0;
                 padding: 0;
@@ -136,7 +136,37 @@ button{
                 text-decoration: none;
                 width: 100%;
                 height: 100%;
-                color: #4A5141;
+                color: $nav-item;
+            }
+        }
+    }
+
+    &__Category {
+        flex-wrap: wrap;
+        gap: .5%;
+        padding: 2%;
+        margin: 0 0 2%;
+        background: #ED9096;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: .8%;
+            box-sizing: border-box;
+            width: 19.6%;
+            overflow: hidden;
+
+            button {
+                text-align: center;
+                border-radius: 5px;
+                box-sizing: border-box;
+                width: 100%;
+                font-size: 10px;
+                padding: 10px 0;
+                background-color: #FBE9EA;
+                color: $nav-item;
+                height: 100%;
             }
         }
     }
@@ -151,7 +181,7 @@ button{
     }
 
     li .is-active {
-        background: $bg-color-section;
+        background: #E75749;
         color: #fff;
 
         &:hover {
@@ -163,12 +193,22 @@ button{
 
 .Read__Category {
 
-    li {
-        display: none;
-    }
+    display: none;
     
-    li.is-show {
-        display: block;
+    &.is-show {
+        display: flex;
+    }
+}
+
+.FilterButton {
+    &.is-active {
+        background: #E75749;
+        color: #fff;
+
+        &:hover {
+            opacity: 1;
+            cursor: auto;
+        }
     }
 }
 
@@ -188,7 +228,7 @@ button{
         margin: 10px 0 0;
         border-radius: 5px 5px 0 0;
     }
-    &__Product {
+    &__ItemCategory {
         background: $bg-color-contents;
         max-width: 580px;
         margin: 0 auto;
@@ -218,6 +258,26 @@ button{
         }
     }
 }
+
+.Products {
+
+    display: none;
+    
+    &.is-show {
+        display: block;
+    }
+}
+
+.Products__ItemCategoryWrapper {
+
+    display: none;
+    
+    &.is-show {
+        display: block;
+    }
+}
+
+
 
 // --------------------------------------------
 
