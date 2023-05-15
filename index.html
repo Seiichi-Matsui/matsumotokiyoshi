@@ -25,69 +25,115 @@
 	<h2 class="Arrow">
 		セール対象商品
 	</h2>
+	<p>
+		カテゴリーを絞り込み
+	</p>
+
+	<ul class="Read__FilterItem">
+
+		<li>
+			<button
+			 class="FilterButton is-active" 
+			 data-filter="all" 
+			 type="button"
+			 >
+				全ての商品
+			</button>
+		</li>
+
+		<li>
+			<button 
+			 class="FilterButton" 
+			 data-filter="everydayItems" 
+			 type="button"
+			>
+				日用品
+			</button>
+		</li>
+
+		<li>
+			<button
+			 class="FilterButton"
+			 data-filter="pharmaceuticals"
+			 type="button"
+			>
+				医薬品
+			</button>
+		</li>
+
+		<li>
+			<button 
+			 class="FilterButton"
+			 data-filter="food" 
+			 type="button"
+			 >
+				食品
+			</button>
+		</li>
+	</ul>
 
 	<ul class="Read__Category">
-		<li>
+		<li class="is-show" data-category="pharmaceuticals">
 			<a href="#medical-supplies">医薬品</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="food">
 			<a href="#health-foods">健康食品</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="pharmaceuticals">
 			<a href="#feminine-care">フェミニンケア</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="everydayItems">
 			<a href="#">介護用品</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="everydayItems">
 			<a href="#">ペット</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="everydayItems">
 			<a href="#">ベビー</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="pharmaceuticals">
 			<a href="#">コンタクトケア</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="pharmaceuticals">
 			<a href="#">メンズケア</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="everydayItems">
 			<a href="#">日用品</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="pharmaceuticals">
 			<a href="#">スキンケア</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="pharmaceuticals">
 			<a href="#">オーラルケア</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="pharmaceuticals">
 			<a href="#">ヘアケア</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="everydayItems">
 			<a href="#">虫刺され・虫除け</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="everydayItems">
 			<a href="#">害虫対策</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="pharmaceuticals">
 			<a href="#">シーズンケア</a>
 		</li>
 
-		<li>
+		<li class="is-show" data-category="food">
 			<a href="#">食品</a>
 		</li>
 	</ul>
