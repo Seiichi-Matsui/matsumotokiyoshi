@@ -15,7 +15,7 @@ $nav-item: #ED9096;
     margin: 0 auto;
     background: $bg-color;
     padding: 0 10px;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
 }
 
 section {
@@ -83,6 +83,22 @@ button{
     appearance: none;
 }
 
+.SpOnly {
+    display: none;
+
+    @include mediaS {
+        display: block;
+    }
+}
+
+.SsOnly {
+    display: none;
+
+    @include mediaSS {
+        display: block;
+    }
+}
+
 // --------------------------------------------
 
 .hero {
@@ -116,10 +132,10 @@ button{
         flex-wrap: wrap;
         padding-left: 0;
         width: 100%;
-        gap: 1%;
+        gap: 5px;
         li {
             box-sizing: border-box;
-            width: 24.25%;
+            width: calc(25% - 4px);
             height: 50px;
             background-color: #FBE9EA;
             margin-top: 1%;
@@ -143,19 +159,27 @@ button{
 
     &__Category {
         flex-wrap: wrap;
-        gap: .5%;
+        gap: 5px;
         padding: 2%;
         margin: 7px 0 2%;
         background: #f7b3b7;
+        align-items: stretch;
 
         li {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: .25% 0;
             box-sizing: border-box;
-            width: 19.6%;
+            width: calc(20% - 4px);
             overflow: hidden;
+
+            @include mediaS {
+                height: 53px;
+            }
+
+            @include mediaSS {
+                height: 68px;
+            }
 
             button {
                 text-align: center;
@@ -300,8 +324,6 @@ button{
     }
 }
 
-
-
 // --------------------------------------------
 
 .FixNav {
@@ -383,4 +405,24 @@ button{
 
     }
 
+}
+
+// --------------------------------------------
+
+.ScrollTop {
+    position: fixed;
+    bottom: 4px;
+    right: 10px;
+    transition: opacity,transform .3s;
+
+    &:hover {
+        opacity: .7;
+        transform: scale(1.05);
+    }
+
+    &__Button {
+        width: 60px;
+        margin: 0 0 0 auto;
+        display: block;
+    }
 }

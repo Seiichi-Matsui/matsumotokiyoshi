@@ -32,6 +32,12 @@
 	}
 }
 
+@mixin mediaSS () {
+	@media ( max-width: 460px ) {
+		@content;
+	}
+}
+
 @mixin media2x () {
 	@media
 	( -webkit-min-device-pixel-ratio: 2 ),

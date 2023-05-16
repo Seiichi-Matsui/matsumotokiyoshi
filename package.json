@@ -9,7 +9,8 @@
     "core-js": "^3.29.0",
     "page-scroll": "^0.4.1",
     "resize-observer-polyfill": "^1.5.1",
-    "simplebar": "^6.2.5"
+    "simplebar": "^6.2.5",
+    "smoothscroll": "^0.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
