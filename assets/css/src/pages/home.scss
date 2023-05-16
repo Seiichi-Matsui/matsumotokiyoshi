@@ -4,7 +4,7 @@
 // Common
 // --------------------------------------------
 $bg-color: #FEFFED;
-$bg-color-section: #ED9196;
+$bg-color-section: #f7b3b7;
 $bg-color-contents: #E7584A;
 $bg-nav-item: rgba(237, 150, 140, .2);
 $nav-item: #ED9096;
@@ -15,7 +15,7 @@ $nav-item: #ED9096;
     margin: 0 auto;
     background: $bg-color;
     padding: 0 10px;
-    padding-bottom: 135px;
+    padding-bottom: 10px;
 }
 
 section {
@@ -49,7 +49,7 @@ h2 {
             top: 0.45em;
             position: absolute;
             border: 0.5em solid transparent;
-            border-top: .85em solid currentColor; 
+            border-top: .85em solid currentColor;
         }
 
         &::before {
@@ -63,7 +63,7 @@ h2 {
 }
 
 h3 {
-    margin: 5px;
+    margin: 5px 5px 10px;
 }
 
 a,
@@ -123,7 +123,7 @@ button{
             height: 50px;
             background-color: #FBE9EA;
             margin-top: 1%;
-            border: 1px solid #979795;
+            //border: 1px solid #979795;
 
             button {
                 margin: 0;
@@ -146,7 +146,7 @@ button{
         gap: .5%;
         padding: 2%;
         margin: 7px 0 2%;
-        background: #ED9096;
+        background: #f7b3b7;
 
         li {
             display: flex;
@@ -206,8 +206,8 @@ button{
             height: 10px;
             background: #E75749;
             bottom: -9px;
-            border-right: 1px solid #979795;
-            border-left: 1px solid #979795;
+            //border-right: 1px solid #979795;
+            //border-left: 1px solid #979795;
             opacity: 0;
             transition: all .5s ease 0s;
         }
@@ -217,7 +217,7 @@ button{
 .Read__Category {
 
     display: none;
-    
+
     &.is-show {
         display: flex;
     }
@@ -285,7 +285,7 @@ button{
 .Products {
 
     display: none;
-    
+
     &.is-show {
         display: block;
     }
@@ -294,7 +294,7 @@ button{
 .Products__ItemCategoryWrapper {
 
     display: none;
-    
+
     &.is-show {
         display: block;
     }
@@ -335,38 +335,38 @@ button{
             top: .3em;
             left: 0;
             border: 0.5em solid transparent;
-            border-top: .85em solid currentColor; 
+            border-top: .85em solid currentColor;
             transform: rotate(90deg);
             z-index: 10;
             height: fit-content;
         }
-    
+
         &__BtnRight {
             position: absolute;
             top: .3em;
             right: 0;
             transform: rotate(-90deg);
             border: 0.5em solid transparent;
-            border-top: .85em solid currentColor; 
+            border-top: .85em solid currentColor;
             z-index: 10;
         }
-    
+
         &__inner {
             overflow: auto;
             position: relative;
             padding: 0 30px;
             margin: 0 auto;
-    
+
             &__Category {
             display: flex;
             gap: 10px;
             width: fit-content;
             padding-left: 0;
-            
+
                 li {
                     width: fit-content;
                     background-color: #fff;
-                    
+
                     a {
                         font-size: 14px;
                         background-color: #fff;
