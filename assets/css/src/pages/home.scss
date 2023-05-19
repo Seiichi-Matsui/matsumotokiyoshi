@@ -8,14 +8,14 @@ $bg-color-section: #f7b3b7;
 $bg-color-contents: #E7584A;
 $bg-nav-item: rgba(237, 150, 140, .2);
 $nav-item: #ED9096;
+$text-color-red: #DD574B;
 
 .BgColor {
     box-sizing: border-box;
     max-width: 640px;
     margin: 0 auto;
     background: $bg-color;
-    padding: 0 10px;
-    padding-bottom: 50px;
+    padding: 0 10px 10px;
 }
 
 section {
@@ -28,7 +28,7 @@ section {
 
 
 h2 {
-    color: #DD574B;
+    color: $text-color-red;
 }
 
 h3,
@@ -39,7 +39,7 @@ p {
 
 h2 {
     width: fit-content;
-    margin: 0 auto;
+    margin: 0 auto -20px;
     &.Arrow {
     position: relative;
     padding: 0 1.4em;
@@ -63,7 +63,8 @@ h2 {
 }
 
 h3 {
-    margin: 5px 5px 10px;
+    margin: 0 5px 10px;
+    font-size: 22px;
 }
 
 a,
@@ -112,6 +113,16 @@ button{
 
 // --------------------------------------------
 
+.SpecialPrice {
+    background: $bg-color-contents;
+
+    h3 {
+        margin: 0 5px 5px;
+    }
+}
+
+// --------------------------------------------
+
 .Read {
     background-color: $bg-color;
     padding: 0;
@@ -121,8 +132,9 @@ button{
     p {
         color: #dd574b;
         font-weight: 900;
-        margin: 20px 0 0;
+        margin: 0 0 10px;
         text-align: center;
+        font-size: 18px;
     }
 
     &__FilterItem {
@@ -323,6 +335,30 @@ button{
     }
 }
 
+.Caution {
+    margin: -10px 0 0;
+    border-radius: 0 0 5px 5px;
+
+    &__Contents {
+        text-align: center;
+        padding: 40px 0;
+
+        p {
+            font-size: 22px;
+            color: $text-color-red;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        span {
+            font-size: 16px;
+            color: $text-color-red;
+            font-weight: 700;
+        }
+    }
+
+}
+
 // --------------------------------------------
 
 .FixNav {
@@ -404,6 +440,59 @@ button{
 
     }
 
+}
+
+// --------------------------------------------
+
+.ShopList {
+    margin-top: 30px;
+    padding: 30px;
+
+    dl {
+        margin: 30px 0 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        dt {
+            text-align: center;
+            background: $bg-color-contents;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            h4 {
+                font-size: 16px;
+                margin: 0;
+                padding: 10px 0;
+            }
+        }
+
+        dd {
+            margin: 0;
+            padding: 30px 30px 0;
+            background: #fff;
+
+            &:last-child {
+                padding: 30px;
+            }
+
+            h5 {
+                margin: 0;
+                font-size: 16px;
+                color: $text-color-red;
+                padding-bottom: 10px;
+                border-bottom: 3px solid $bg-color-contents;
+            }
+            p {
+                font-size: 13px;
+                color: #000;
+                margin: 10px 0 0;
+            }
+        }
+    }
 }
 
 // --------------------------------------------
