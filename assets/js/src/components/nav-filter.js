@@ -106,7 +106,7 @@ function categoryFilter() {
     );
 
     // クリックしたボタンがallの場合全てを表示
-    if (buttonCategory == 'all') {
+    if (buttonCategory == 'productsCategory-all') {
         product.classList.add('is-show');
     }
 
