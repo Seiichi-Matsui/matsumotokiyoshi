@@ -31,9 +31,20 @@
 		@content;
 	}
 }
+@mixin mediaS_L () {
+	@media ( max-width: $breakpoint-small ) {
+		@content;
+	}
+}
 
-@mixin mediaSS () {
+@mixin mediaS_M () {
 	@media ( max-width: 460px ) {
+		@content;
+	}
+}
+
+@mixin mediaS_S () {
+	@media ( max-width: 380px ) {
 		@content;
 	}
 }

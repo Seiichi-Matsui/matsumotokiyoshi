@@ -6,7 +6,6 @@
 $bg-color: #FEFFED;
 $bg-color-section: #f7b3b7;
 $bg-color-contents: #E7584A;
-$bg-nav-item: rgba(237, 150, 140, .2);
 $nav-item: #ED9096;
 $text-color-red: #DD574B;
 
@@ -84,18 +83,25 @@ button{
     appearance: none;
 }
 
-.SpOnly {
+.Sp__L__Only {
     display: none;
 
-    @include mediaS {
+    @include mediaS_L {
         display: block;
     }
 }
 
-.SsOnly {
+.Sp__M__Only {
     display: none;
 
-    @include mediaSS {
+    @include mediaS_M {
+        display: block;
+    }
+}
+.Sp__S__Only {
+    display: none;
+
+    @include mediaS_S {
         display: block;
     }
 }
@@ -118,6 +124,14 @@ button{
 
     h3 {
         margin: 0 5px 5px;
+    }
+    
+    .Products__ItemCategory {
+        background: $bg-color-contents;
+
+        li {
+            background: #fff;
+        }
     }
 }
 
@@ -152,6 +166,14 @@ button{
             background-color: #FBE9EA;
             //border: 1px solid #979795;
 
+            @include mediaS_L {
+                height: 75px;
+            }
+
+            @include mediaS_S {
+                height: 100px;
+            }
+
             button {
                 margin: 0;
                 padding: 0;
@@ -184,12 +206,16 @@ button{
             width: calc(20% - 4px);
             overflow: hidden;
 
-            @include mediaS {
+            @include mediaS_L {
                 height: 53px;
             }
 
-            @include mediaSS {
+            @include mediaS_M {
                 height: 68px;
+            }
+
+            @include mediaS_S {
+                height: 83px;
             }
 
             button {
