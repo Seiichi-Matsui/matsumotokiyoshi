@@ -6,8 +6,10 @@
 $bg-color: #FEFFED;
 $bg-color-section: #f7b3b7;
 $bg-color-contents: #E7584A;
-$nav-item: #ED9096;
+
+$text-color-nav-item: #ED9096;
 $text-color-red: #DD574B;
+$text-color-white: #fff;
 
 .BgColor {
     box-sizing: border-box;
@@ -33,7 +35,7 @@ h2 {
 h3,
 h4,
 p {
-    color: #fff;
+    color: $text-color-white;
 }
 
 h2 {
@@ -185,7 +187,7 @@ button{
                 text-decoration: none;
                 width: 100%;
                 height: 100%;
-                color: $nav-item;
+                color: $text-color-nav-item;
             }
         }
     }
@@ -226,7 +228,7 @@ button{
                 font-size: 10px;
                 padding: 10px 0;
                 background-color: #FBE9EA;
-                color: $nav-item;
+                color: $text-color-nav-item;
                 height: 100%;
             }
         }
@@ -243,7 +245,7 @@ button{
 
     li .is-active {
         background: #E75749;
-        color: #fff;
+        color: $text-color-white;
 
         &:hover {
             opacity: 1;
@@ -287,7 +289,7 @@ button{
 .FilterButton {
     &.is-active {
         background: #E75749;
-        color: #fff;
+        color: $text-color-white;
 
         &:hover {
             opacity: 1;
