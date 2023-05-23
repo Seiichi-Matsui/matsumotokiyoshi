@@ -1,7 +1,7 @@
 @use "../common/vars" as *;
 @use "../common/mixins" as *;
 
-// Common
+// カラー指定
 // --------------------------------------------
 $bg-color: #FEFFED;
 $bg-color-section: #f7b3b7;
@@ -10,6 +10,89 @@ $bg-color-contents: #E7584A;
 $text-color-nav-item: #ED9096;
 $text-color-red: #DD574B;
 $text-color-white: #fff;
+
+// 商品カテゴリーカラー指定
+// --------------------------------------------
+
+// スペシャルプライス
+$bg__products01: #E60012;
+$bg__products01__inner: #E60012;
+
+// シーズンケアアイテム
+$bg__products02: #FFCAD0;
+$bg__products02__inner: #f2818e;
+
+// カウンセリング化粧品
+$bg__products03: #ffa1db;
+$bg__products03__inner: #cb6ca7;
+
+// 虫さされ・虫よけ
+$bg__products04: #5F84E0;
+$bg__products04__inner: #425BA8;
+
+// 害虫対策
+$bg__products05: #45DDD5;
+$bg__products05__inner: #00ADA9;
+
+// ビューティケア
+$bg__products06: #EE869A;
+$bg__products06__inner: #ED5D7F;
+
+// 日用品
+$bg__products07: #a5e881;
+$bg__products07__inner: #5CB531;
+
+// オーラルケア
+$bg__products08: #5BB2E8;
+$bg__products08__inner: #0068B7;
+
+// メンズケア
+$bg__products09: #75B8EA;
+$bg__products09__inner: #005BAC;
+
+// フェミニンケア
+$bg__products10: #FFABD5;
+$bg__products10__inner: #E85298;
+
+// ベビー
+$bg__products11: #75B8EA;
+$bg__products11__inner: #005BAC;
+
+// 介護用品
+$bg__products12: #75B8EA;
+$bg__products12__inner: #005BAC;
+
+// 医薬品
+$bg__products13: #86DDFC;
+$bg__products13__inner: #00A0E9;
+
+// アイマスク
+$bg__products14: #ffa1db;
+$bg__products14__inner: #cb6ca7;
+
+// 医療衛生・コンタクト
+$bg__products15: #86DDFC;
+$bg__products15__inner: #00A0E9;
+
+// トイレ用品
+$bg__products16: #CC6CD3;
+$bg__products16__inner: #7F1084;
+
+// 健康食品
+$bg__products17: #44E284;
+$bg__products17__inner: #009944;
+
+// ヘルシアの保健機能食品シリーズ
+$bg__products18: #44E284;
+$bg__products18__inner: #009944;
+
+// 食品
+$bg__products19: #FFB471;
+$bg__products19__inner: #EF7A00;
+
+
+// Common
+// --------------------------------------------
 
 .BgColor {
     box-sizing: border-box;
@@ -23,7 +106,6 @@ section {
     max-width: 600px;
     margin: 0 auto;
     padding: 10px 10px;
-    background: $bg-color-section;
     border-radius: 5px;
 }
 
@@ -108,6 +190,257 @@ button{
     }
 }
 
+// 商品カテゴリーごとのカラー指定
+// --------------------------------------------
+
+.Bg__Products01 {
+    background: $bg__products01;
+
+    &__Inner {
+        background: $bg__products01__inner;
+    }
+}
+.Bg__Products01__Active {
+    &.is-active {
+        background: $bg__products01__inner;
+    }
+}
+
+.Bg__Products02 {
+    background: $bg__products02;
+
+    &__Inner {
+        background: $bg__products02__inner;
+    }
+}
+.Bg__Products02__Active {
+    &.is-active {
+        background: $bg__products02__inner;
+    }
+}
+
+.Bg__Products03 {
+    background: $bg__products03;
+
+    &__Inner {
+        background: $bg__products03__inner;
+    }
+}
+.Bg__Products03__Active {
+    &.is-active {
+        background: $bg__products03__inner;
+    }
+}
+
+.Bg__Products04 {
+    background: $bg__products04;
+
+    &__Inner {
+        background: $bg__products04__inner;
+    }
+}
+.Bg__Products04__Active {
+    &.is-active {
+        background: $bg__products04__inner;
+    }
+}
+
+.Bg__Products05 {
+    background: $bg__products05;
+
+    &__Inner {
+        background: $bg__products05__inner;
+    }
+}
+.Bg__Products05__Active {
+    &.is-active {
+        background: $bg__products05__inner;
+    }
+}
+
+.Bg__Products06 {
+    background: $bg__products06;
+
+    &__Inner {
+        background: $bg__products06__inner;
+    }
+}
+.Bg__Products06__Active {
+    &.is-active {
+        background: $bg__products06__inner;
+    }
+}
+
+.Bg__Products07 {
+    background: $bg__products07;
+
+    &__Inner {
+        background: $bg__products07__inner;
+    }
+}
+.Bg__Products07__Active {
+    &.is-active {
+        background: $bg__products07__inner;
+    }
+}
+
+.Bg__Products08 {
+    background: $bg__products08;
+
+    &__Inner {
+        background: $bg__products08__inner;
+    }
+}
+.Bg__Products08__Active {
+    &.is-active {
+        background: $bg__products08__inner;
+    }
+}
+
+.Bg__Products09 {
+    background: $bg__products09;
+
+    &__Inner {
+        background: $bg__products09__inner;
+    }
+}
+.Bg__Products09__Active {
+    &.is-active {
+        background: $bg__products09__inner;
+    }
+}
+
+.Bg__Products10 {
+    background: $bg__products10;
+
+    &__Inner {
+        background: $bg__products10__inner;
+    }
+}
+.Bg__Products10__Active {
+    &.is-active {
+        background: $bg__products10__inner;
+    }
+}
+
+.Bg__Products11 {
+    background: $bg__products11;
+
+    &__Inner {
+        background: $bg__products11__inner;
+    }
+}
+.Bg__Products11__Active {
+    &.is-active {
+        background: $bg__products11__inner;
+    }
+}
+
+.Bg__Products12 {
+    background: $bg__products12;
+
+    &__Inner {
+        background: $bg__products12__inner;
+    }
+}
+.Bg__Products12__Active {
+    &.is-active {
+        background: $bg__products12__inner;
+    }
+}
+
+.Bg__Products13 {
+    background: $bg__products13;
+
+    &__Inner {
+        background: $bg__products13__inner;
+    }
+}
+.Bg__Products13__Active {
+    &.is-active {
+        background: $bg__products13__inner;
+    }
+}
+
+.Bg__Products14 {
+    background: $bg__products14;
+
+    &__Inner {
+        background: $bg__products14__inner;
+    }
+}
+.Bg__Products14__Active {
+    &.is-active {
+        background: $bg__products14__inner;
+    }
+}
+
+.Bg__Products15 {
+    background: $bg__products15;
+
+    &__Inner {
+        background: $bg__products15__inner;
+    }
+}
+.Bg__Products15__Active {
+    &.is-active {
+        background: $bg__products15__inner;
+    }
+}
+
+.Bg__Products16 {
+    background: $bg__products16;
+
+    &__Inner {
+        background: $bg__products16__inner;
+    }
+}
+.Bg__Products16__Active {
+    &.is-active {
+        background: $bg__products16__inner;
+    }
+}
+
+.Bg__Products17 {
+    background: $bg__products17;
+
+    &__Inner {
+        background: $bg__products17__inner;
+    }
+}
+.Bg__Products17__Active {
+    &.is-active {
+        background: $bg__products17__inner;
+    }
+}
+
+.Bg__Products18 {
+    background: $bg__products18;
+
+    &__Inner {
+        background: $bg__products18__inner;
+    }
+}
+.Bg__Products18__Active {
+    &.is-active {
+        background: $bg__products18__inner;
+    }
+}
+
+.Bg__Products19 {
+    background: $bg__products19;
+
+    &__Inner {
+        background: $bg__products19__inner;
+    }
+}
+.Bg__Products19__Active {
+    &.is-active {
+        background: $bg__products19__inner;
+    }
+}
+
+
 // --------------------------------------------
 
 .hero {
@@ -127,7 +460,7 @@ button{
     h3 {
         margin: 0 5px 5px;
     }
-    
+
     .Products__ItemCategory {
         background: $bg-color-contents;
 
@@ -165,7 +498,7 @@ button{
             box-sizing: border-box;
             width: calc(25% - 4px);
             height: 50px;
-            background-color: #FBE9EA;
+            // background-color: #FBE9EA;
             //border: 1px solid #979795;
 
             @include mediaS_L {
@@ -185,6 +518,7 @@ button{
                 align-items: center;
                 justify-content: center;
                 text-decoration: none;
+                background-color: #f5f5f5;
                 width: 100%;
                 height: 100%;
                 color: $text-color-nav-item;
@@ -197,7 +531,6 @@ button{
         gap: 5px;
         padding: 2%;
         margin: 5px 0 5px;
-        background: #f7b3b7;
         align-items: stretch;
 
         li {
@@ -227,7 +560,7 @@ button{
                 width: 100%;
                 font-size: 10px;
                 padding: 10px 0;
-                background-color: #FBE9EA;
+                background-color: #f5f5f5;
                 color: $text-color-nav-item;
                 height: 100%;
             }
@@ -244,7 +577,6 @@ button{
     }
 
     li .is-active {
-        background: #E75749;
         color: $text-color-white;
 
         &:hover {
@@ -267,7 +599,7 @@ button{
             content: '';
             width: 100%;
             height: 5px;
-            background: #E75749;
+            background: inherit;
             bottom: -5px;
             //border-right: 1px solid #979795;
             //border-left: 1px solid #979795;
@@ -288,7 +620,6 @@ button{
 
 .FilterButton {
     &.is-active {
-        background: #E75749;
         color: $text-color-white;
 
         &:hover {
@@ -308,14 +639,12 @@ button{
     }
 
     h4 {
-        background: $bg-color-contents;
         width: fit-content;
         padding: 3px 20px;
         margin: 10px 0 0;
         border-radius: 5px 5px 0 0;
     }
     &__ItemCategory {
-        background: $bg-color-contents;
         max-width: 580px;
         margin: 0 auto;
         padding: 10px 10px;
@@ -330,12 +659,12 @@ button{
             overflow: hidden;
             background: #fff;
             box-sizing: border-box;
-            padding: 5px;
+            //padding: 5px;
 
             img {
                 display: block;
                 margin: 0 auto;
-                width: 95%;
+                width: 100%;
             }
         }
 

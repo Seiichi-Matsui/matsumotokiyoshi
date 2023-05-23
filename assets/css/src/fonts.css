@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap");
+@font-face {
+  font-family: "xYuGothic";
+  font-weight: 400;
+  font-style: normal;
+  src: local("YuGothic-Medium"), local("Yu Gothic Medium"), local("YuGo-Medium"), local("YuGothic Medium"), local("YuGothic-Regular"), local("Yu Gothic");
+}
+@font-face {
+  font-family: "xYuGothic";
+  font-weight: 700;
+  font-style: normal;
+  src: local("YuGothic-Bold"), local("Yu Gothic Bold"), local("YuGo-Bold"), local("YuGothic Bold"), local("Yu Gothic");
+}
+@font-face {
+  font-family: "xYuMincho";
+  font-weight: 400;
+  font-style: normal;
+  src: local("YuMincho-Regular"), local("Yu Mincho Regular"), local("YuMin-Medium"), local("YuMincho Medium"), local("Yu Mincho");
+}
+@font-face {
+  font-family: "xYuMincho";
+  font-weight: 600;
+  font-style: normal;
+  src: local("YuMincho-Demibold"), local("Yu Mincho Demibold"), local("YuMin-Demibold"), local("YuMincho Demibold"), local("Yu Mincho");
+}/*# sourceMappingURL=fonts.css.map */
