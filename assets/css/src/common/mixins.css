@@ -1,0 +1,30 @@
+@media (min-width: 941px) {
+  _ {
+    _: 0;
+  }
+}
+@media (min-width: 681px) {
+  _ {
+    _: 0;
+  }
+}
+@media (max-width: 940px) and (min-width: 681px) {
+  _ {
+    _: 0;
+  }
+}
+@media (max-width: 940px) {
+  _ {
+    _: 0;
+  }
+}
+@media (max-width: 680px) {
+  _ {
+    _: 0;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  _ {
+    _: 0;
+  }
+}/*# sourceMappingURL=mixins.css.map */
