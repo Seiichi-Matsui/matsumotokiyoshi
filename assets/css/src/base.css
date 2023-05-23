@@ -1,0 +1,160 @@
+@media (min-width: 941px) {
+  _ {
+    _: 0;
+  }
+}
+@media (min-width: 681px) {
+  _ {
+    _: 0;
+  }
+}
+@media (max-width: 940px) and (min-width: 681px) {
+  _ {
+    _: 0;
+  }
+}
+@media (max-width: 940px) {
+  _ {
+    _: 0;
+  }
+}
+@media (max-width: 680px) {
+  _ {
+    _: 0;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  _ {
+    _: 0;
+  }
+}
+html {
+  height: 100%;
+  font-family: "Noto Sans", "Source Han Sans JP", "Noto Sans Japanese", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "xYuGothic", Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+[type=search] {
+  outline-offset: -2px;
+  -webkit-appearance: textfield;
+}
+
+[type=email],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=url] {
+  background-image: linear-gradient(#fff, #fff);
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.25em;
+}
+
+.-onlyLargeScreen {
+  display: none !important;
+}
+@media (min-width: 941px) {
+  .-onlyLargeScreen {
+    display: block !important;
+  }
+  br.-onlyLargeScreen {
+    display: inline !important;
+  }
+}
+
+.-onlySmallScreen {
+  display: none !important;
+}
+@media (max-width: 680px) {
+  .-onlySmallScreen {
+    display: block !important;
+  }
+  br.-onlySmallScreen {
+    display: inline !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .-ignoreSmallScreen {
+    display: none !important;
+  }
+}
+
+@media (max-width: 940px) and (min-width: 681px) {
+  .-ignoreMiddleScreen {
+    display: none !important;
+  }
+}
+
+@media (min-width: 941px) {
+  .-ignoreLargeScreen {
+    display: none !important;
+  }
+}
+
+.-text-right {
+  text-align: right !important;
+}/*# sourceMappingURL=base.css.map */
