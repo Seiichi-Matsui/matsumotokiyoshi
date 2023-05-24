@@ -3,12 +3,13 @@
 
 // カラー指定
 // --------------------------------------------
-$bg-color: #FEFFED;
+$bg-color: #f3f3f3;
 $bg-color-section: #f7b3b7;
 $bg-color-contents: #DF312F;
 
 $text-color-nav-item: #000;
 $text-color-red: #DF312F;
+$text-color-black: #2c2c2c;
 $text-color-white: #fff;
 
 // 商品カテゴリーカラー指定
@@ -111,7 +112,7 @@ section {
 
 
 h2 {
-    color: $text-color-red;
+    color: $text-color-black;
 }
 
 h3,
@@ -702,14 +703,14 @@ button{
 
         p {
             font-size: 22px;
-            color: $text-color-red;
+            color: $text-color-black;
             font-weight: 700;
             margin: 0;
         }
 
         span {
             font-size: 16px;
-            color: $text-color-red;
+            color: $text-color-black;
             font-weight: 700;
         }
     }
@@ -846,7 +847,7 @@ button{
     }
 
     &__image {
-        
+
         img {
             display: block;
         }
@@ -864,7 +865,7 @@ button{
         img {
             width: 40px;
             height: 40px;
-            
+
             @include mediaLabSp {
                 width: 60px;
                 height: 60px;
@@ -875,7 +876,7 @@ button{
             font-size: 12px;
             color: #000;
             margin-bottom: 0;
-            
+
             @include mediaLabSp {
                 font-size: 18px;
             }
@@ -885,11 +886,11 @@ button{
 
     &__Text {
         padding: 5px 10px 10px;
-        
+
         @include mediaLabSp {
             padding: 5px 15px 10px;
         }
-        
+
         p {
             font-size: 12px;
             color: #000;
@@ -967,7 +968,7 @@ button{
             h5 {
                 margin: 0;
                 font-size: 16px;
-                color: $text-color-red;
+                color: $text-color-black;
                 padding-bottom: 10px;
                 border-bottom: 3px solid $bg-color-contents;
             }
