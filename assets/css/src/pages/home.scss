@@ -5,7 +5,7 @@
 // --------------------------------------------
 $bg-color: #FEFFED;
 $bg-color-section: #f7b3b7;
-$bg-color-contents: #E7584A;
+$bg-color-contents: #DF312F;
 
 $text-color-nav-item: #ED9096;
 $text-color-red: #DD574B;
@@ -15,8 +15,8 @@ $text-color-white: #fff;
 // --------------------------------------------
 
 // スペシャルプライス
-$bg__products01: #E60012;
-$bg__products01__inner: #E60012;
+$bg__products01: #DF312F;
+$bg__products01__inner: #DF312F;
 
 // シーズンケアアイテム
 $bg__products02: #FFCAD0;
@@ -816,6 +816,9 @@ button{
         font-size: 10px;
         text-align: center;
         display: block;
+        @include mediaLabSp {
+            margin-top: 10px;
+        }
     }
 
     ul {
@@ -825,7 +828,7 @@ button{
         margin: 5px 0 0;
 
         @include mediaLabSp {
-            display: block;
+            flex-wrap: wrap;
         }
 
         li {
@@ -837,6 +840,7 @@ button{
 
             @include mediaLabSp {
                 width: 100%;
+                margin-top: 10px;
             }
         }
     }
@@ -913,7 +917,7 @@ button{
 
     &__Bg {
         position: absolute;
-        width: 12%;
+        width: 15%;
         bottom: -8px;
         right: 0;
 
