@@ -452,6 +452,20 @@ button{
     }
 }
 
+
+// --------------------------------------------
+
+.Paypay {
+    padding: 20px 20px 0;
+    margin-bottom: 20px;
+    max-width: 620px;
+    background: $bg-color;
+
+    img {
+        display: block;
+    }
+}
+
 // --------------------------------------------
 
 .SpecialPrice {
@@ -738,6 +752,30 @@ button{
                 }
             }
     
+        }
+
+        ul {
+            text-align: left;
+            padding-left: 0px;
+            margin-top: 20px;
+
+            li {
+                font-size: 14px;
+                position: relative;
+                padding-left: 15px;
+                margin-top: 5px;
+                font-weight: 700;
+
+                &::before {
+                    position: absolute;
+                    content: '※';
+                    left: 0;
+                }
+
+                &.-Red {
+                    color: $text-color-red;
+                }
+            }
         }
     }
 
