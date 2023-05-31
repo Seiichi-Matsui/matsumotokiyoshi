@@ -1,18 +1,34 @@
 @use "../common/vars" as *;
 @use "../common/mixins" as *;
 
+
+
+
+
+
+// labカラー設定
+// 外側
+$bg_1: #4E4347;
+// 内側
+$bg_2: #c9c9c9;
+
+
+
+
+
 // カラー指定
 // --------------------------------------------
 $bg-color: #f3f3f3;
-$bg-color-section: #c9c9c9;
+$bg-color-section: $bg_2;
 // $bg-color-contents: #DF312F;
-$bg-color-contents: #4E4347;
+$bg-color-contents: $bg_1;
 
 $text-color-nav-item: #000;
 $text-color-red: #DF312F;
 $text-color-black: #2c2c2c;
 $text-color-white: #fff;
 
+// ↓↓↓↓↓↓↓↓↓カラーを戻す際はこの下のコメントアウトを外す↓↓↓↓↓↓↓↓↓↓↓↓
 // 商品カテゴリーカラー指定
 // --------------------------------------------
 
@@ -92,83 +108,86 @@ $text-color-white: #fff;
 // $bg__products19: #FFB471;
 // $bg__products19__inner: #EF7A00;
 
+
+// ↓↓↓↓↓↓↓↓↓カラーを戻す際はこの下のコメントアウト↓↓↓↓↓↓↓↓↓↓↓↓
 // -------------------------------------
 
+
 // スペシャルプライス
-$bg__products01: #4E4347;
-$bg__products01__inner: #c9c9c9;
+$bg__products01: $bg_1;
+$bg__products01__inner: $bg_2;
 
 // シーズンケアアイテム
-$bg__products02: #4E4347;
-$bg__products02__inner: #c9c9c9;
+$bg__products02: $bg_1;
+$bg__products02__inner: $bg_2;
 
 // カウンセリング化粧品
-$bg__products03: #4E4347;
-$bg__products03__inner: #c9c9c9;
+$bg__products03: $bg_1;
+$bg__products03__inner: $bg_2;
 
 // 虫さされ・虫よけ
-$bg__products04: #4E4347;
-$bg__products04__inner: #c9c9c9;
+$bg__products04: $bg_1;
+$bg__products04__inner: $bg_2;
 
 // 害虫対策
-$bg__products05: #4E4347;
-$bg__products05__inner: #c9c9c9;
+$bg__products05: $bg_1;
+$bg__products05__inner: $bg_2;
 
 // ビューティケア
-$bg__products06: #4E4347;
-$bg__products06__inner: #c9c9c9;
+$bg__products06: $bg_1;
+$bg__products06__inner: $bg_2;
 
 // 日用品
-$bg__products07: #4E4347;
-$bg__products07__inner: #c9c9c9;
+$bg__products07: $bg_1;
+$bg__products07__inner: $bg_2;
 
 // オーラルケア
-$bg__products08: #4E4347;
-$bg__products08__inner: #c9c9c9;
+$bg__products08: $bg_1;
+$bg__products08__inner: $bg_2;
 
 // メンズケア
-$bg__products09: #4E4347;
-$bg__products09__inner: #c9c9c9;
+$bg__products09: $bg_1;
+$bg__products09__inner: $bg_2;
 
 // フェミニンケア
-$bg__products10: #4E4347;
-$bg__products10__inner: #c9c9c9;
+$bg__products10: $bg_1;
+$bg__products10__inner: $bg_2;
 
 // ベビー
-$bg__products11: #4E4347;
-$bg__products11__inner: #c9c9c9;
+$bg__products11: $bg_1;
+$bg__products11__inner: $bg_2;
 
 // 介護用品
-$bg__products12: #4E4347;
-$bg__products12__inner: #c9c9c9;
+$bg__products12: $bg_1;
+$bg__products12__inner: $bg_2;
 
 // 医薬品
-$bg__products13: #4E4347;
-$bg__products13__inner: #c9c9c9;
+$bg__products13: $bg_1;
+$bg__products13__inner: $bg_2;
 
 // アイマスク
-$bg__products14: #4E4347;
-$bg__products14__inner: #c9c9c9;
+$bg__products14: $bg_1;
+$bg__products14__inner: $bg_2;
 
 // 医療衛生・コンタクト
-$bg__products15: #4E4347;
-$bg__products15__inner: #c9c9c9;
+$bg__products15: $bg_1;
+$bg__products15__inner: $bg_2;
 
 // トイレ用品
-$bg__products16: #4E4347;
-$bg__products16__inner: #c9c9c9;
+$bg__products16: $bg_1;
+$bg__products16__inner: $bg_2;
 
 // 健康食品
-$bg__products17: #4E4347;
-$bg__products17__inner: #c9c9c9;
+$bg__products17: $bg_1;
+$bg__products17__inner: $bg_2;
 
 // ヘルシアの保健機能食品シリーズ
-$bg__products18: #4E4347;
-$bg__products18__inner: #c9c9c9;
+$bg__products18: $bg_1;
+$bg__products18__inner: $bg_2;
 
 // 食品
-$bg__products19: #4E4347;
-$bg__products19__inner: #c9c9c9;
+$bg__products19: $bg_1;
+$bg__products19__inner: $bg_2;
 
 
 // Common
@@ -1001,7 +1020,7 @@ button{
     border-radius: 0;
 
     h2 {
-        background: #4E4347;
+        background: $bg_1;
         color: #fff;
         width: 100%;
         text-align: center;
@@ -1029,7 +1048,7 @@ button{
         li {
             width: 33.3%;
             box-sizing: border-box;
-            background-color: #c9c9c9;
+            background-color: $bg_2;
             position: relative;
             overflow: hidden;
 
