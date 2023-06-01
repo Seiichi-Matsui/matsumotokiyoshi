@@ -456,8 +456,7 @@ button{
 // --------------------------------------------
 
 .Paypay {
-    padding: 30px 10px 0;
-    margin-bottom: 20px;
+    padding: 10px 10px 0;
     max-width: 620px;
     background: $bg-color;
     border-radius: 0;
@@ -731,10 +730,13 @@ button{
         }
 
         div {
+            margin-top: 30px;
+        }
+
+        &__MemorialSummer {
             display: flex;
             justify-content: center;
             gap: 10px;
-            margin-top: 10px;
 
             img {
                 width: 50px;
@@ -752,13 +754,37 @@ button{
                     left: 0;
                 }
             }
-    
+        }
+
+        &__Point {
+
+            img {
+                width: 200px;
+            }
+
+            p {
+                font-size: 16px;
+                color: #000;
+
+                strong {
+                    display: inline;
+                    color: $text-color-red;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &__Medical {
+            p {
+                font-size: 16px;
+                color: #000;
+            }
         }
 
         ul {
             text-align: left;
             padding-left: 0px;
-            margin-top: 20px;
+            margin-top: 40px;
 
             li {
                 font-size: 14px;
