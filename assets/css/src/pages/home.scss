@@ -15,80 +15,61 @@ $text-color-white: #fff;
 // --------------------------------------------
 
 // スペシャルプライス
-$bg__products01: #DF312F;
-$bg__products01__inner: #DF312F;
+$bg_01: #DF312F;
 
 // シーズンケアアイテム
-$bg__products02: #FFCAD0;
-$bg__products02__inner: #f2818e;
+$bg_02: #f2818e;
 
 // カウンセリング化粧品
-$bg__products03: #ffa1db;
-$bg__products03__inner: #cb6ca7;
+$bg_03: #cb6ca7;
 
 // 虫さされ・虫よけ
-$bg__products04: #5F84E0;
-$bg__products04__inner: #425BA8;
+$bg_04: #425BA8;
 
 // 害虫対策
-$bg__products05: #45DDD5;
-$bg__products05__inner: #00ADA9;
+$bg_05: #00ADA9;
 
 // ビューティケア
-$bg__products06: #EE869A;
-$bg__products06__inner: #ED5D7F;
+$bg_06: #ED5D7F;
 
 // 日用品
-$bg__products07: #a5e881;
-$bg__products07__inner: #5CB531;
+$bg_07: #5CB531;
 
 // オーラルケア
-$bg__products08: #5BB2E8;
-$bg__products08__inner: #0068B7;
+$bg_08: #0068B7;
 
 // メンズケア
-$bg__products09: #75B8EA;
-$bg__products09__inner: #005BAC;
+$bg_09: #005BAC;
 
 // フェミニンケア
-$bg__products10: #FFABD5;
-$bg__products10__inner: #E85298;
+$bg_10: #E85298;
 
 // ベビー
-$bg__products11: #75B8EA;
-$bg__products11__inner: #005BAC;
+$bg_11: #005BAC;
 
 // 介護用品
-$bg__products12: #75B8EA;
-$bg__products12__inner: #005BAC;
+$bg_12: #005BAC;
 
 // 医薬品
-$bg__products13: #86DDFC;
-$bg__products13__inner: #00A0E9;
+$bg_13: #00A0E9;
 
 // アイマスク
-$bg__products14: #ffa1db;
-$bg__products14__inner: #cb6ca7;
+$bg_14: #cb6ca7;
 
 // 医療衛生・コンタクト
-$bg__products15: #86DDFC;
-$bg__products15__inner: #00A0E9;
+$bg_15: #00A0E9;
 
 // トイレ用品
-$bg__products16: #CC6CD3;
-$bg__products16__inner: #7F1084;
+$bg_16: #7F1084;
 
 // 健康食品
-$bg__products17: #44E284;
-$bg__products17__inner: #009944;
+$bg_17: #009944;
 
 // ヘルシアの保健機能食品シリーズ
-$bg__products18: #44E284;
-$bg__products18__inner: #009944;
+$bg_18: #009944;
 
 // 食品
-$bg__products19: #FFB471;
-$bg__products19__inner: #EF7A00;
+$bg_19: #EF7A00;
 
 
 // Common
@@ -103,9 +84,8 @@ $bg__products19__inner: #EF7A00;
 }
 
 section {
-    max-width: 600px;
+    max-width: 620px;
     margin: 0 auto;
-    padding: 10px 10px;
     border-radius: 5px;
 }
 
@@ -193,250 +173,107 @@ button{
 // 商品カテゴリーごとのカラー指定
 // --------------------------------------------
 
-.Bg__Products01 {
-    background: $bg__products01;
-
-    &__Inner {
-        background: $bg__products01__inner;
-    }
-}
 .Bg__Products01__Active {
     &.is-active {
-        background: $bg__products01__inner;
+        background: $bg_01;
     }
 }
 
-.Bg__Products02 {
-    background: $bg__products02;
-
-    &__Inner {
-        background: $bg__products02__inner;
-    }
-}
 .Bg__Products02__Active {
     &.is-active {
-        background: $bg__products02__inner;
+        background: $bg_02;
     }
 }
 
-.Bg__Products03 {
-    background: $bg__products03;
-
-    &__Inner {
-        background: $bg__products03__inner;
-    }
-}
 .Bg__Products03__Active {
     &.is-active {
-        background: $bg__products03__inner;
+        background: $bg_03;
     }
 }
 
-.Bg__Products04 {
-    background: $bg__products04;
-
-    &__Inner {
-        background: $bg__products04__inner;
-    }
-}
 .Bg__Products04__Active {
     &.is-active {
-        background: $bg__products04__inner;
+        background: $bg_04;
     }
 }
 
-.Bg__Products05 {
-    background: $bg__products05;
-
-    &__Inner {
-        background: $bg__products05__inner;
-    }
-}
 .Bg__Products05__Active {
     &.is-active {
-        background: $bg__products05__inner;
+        background: $bg_05;
     }
 }
 
-.Bg__Products06 {
-    background: $bg__products06;
-
-    &__Inner {
-        background: $bg__products06__inner;
-    }
-}
 .Bg__Products06__Active {
     &.is-active {
-        background: $bg__products06__inner;
+        background: $bg_06;
     }
 }
 
-.Bg__Products07 {
-    background: $bg__products07;
-
-    &__Inner {
-        background: $bg__products07__inner;
-    }
-}
 .Bg__Products07__Active {
     &.is-active {
-        background: $bg__products07__inner;
+        background: $bg_07;
     }
 }
 
-.Bg__Products08 {
-    background: $bg__products08;
-
-    &__Inner {
-        background: $bg__products08__inner;
-    }
-}
 .Bg__Products08__Active {
     &.is-active {
-        background: $bg__products08__inner;
+        background: $bg_08;
     }
 }
 
-.Bg__Products09 {
-    background: $bg__products09;
-
-    &__Inner {
-        background: $bg__products09__inner;
-    }
-}
 .Bg__Products09__Active {
     &.is-active {
-        background: $bg__products09__inner;
-    }
-}
-
-.Bg__Products10 {
-    background: $bg__products10;
-
-    &__Inner {
-        background: $bg__products10__inner;
+        background: $bg_09;
     }
 }
 .Bg__Products10__Active {
     &.is-active {
-        background: $bg__products10__inner;
-    }
-}
-
-.Bg__Products11 {
-    background: $bg__products11;
-
-    &__Inner {
-        background: $bg__products11__inner;
+        background: $bg_10;
     }
 }
 .Bg__Products11__Active {
     &.is-active {
-        background: $bg__products11__inner;
-    }
-}
-
-.Bg__Products12 {
-    background: $bg__products12;
-
-    &__Inner {
-        background: $bg__products12__inner;
+        background: $bg_11;
     }
 }
 .Bg__Products12__Active {
     &.is-active {
-        background: $bg__products12__inner;
-    }
-}
-
-.Bg__Products13 {
-    background: $bg__products13;
-
-    &__Inner {
-        background: $bg__products13__inner;
+        background: $bg_12;
     }
 }
 .Bg__Products13__Active {
     &.is-active {
-        background: $bg__products13__inner;
-    }
-}
-
-.Bg__Products14 {
-    background: $bg__products14;
-
-    &__Inner {
-        background: $bg__products14__inner;
+        background: $bg_13;
     }
 }
 .Bg__Products14__Active {
     &.is-active {
-        background: $bg__products14__inner;
-    }
-}
-
-.Bg__Products15 {
-    background: $bg__products15;
-
-    &__Inner {
-        background: $bg__products15__inner;
+        background: $bg_14;
     }
 }
 .Bg__Products15__Active {
     &.is-active {
-        background: $bg__products15__inner;
-    }
-}
-
-.Bg__Products16 {
-    background: $bg__products16;
-
-    &__Inner {
-        background: $bg__products16__inner;
+        background: $bg_15;
     }
 }
 .Bg__Products16__Active {
     &.is-active {
-        background: $bg__products16__inner;
-    }
-}
-
-.Bg__Products17 {
-    background: $bg__products17;
-
-    &__Inner {
-        background: $bg__products17__inner;
+        background: $bg_16;
     }
 }
 .Bg__Products17__Active {
     &.is-active {
-        background: $bg__products17__inner;
-    }
-}
-
-.Bg__Products18 {
-    background: $bg__products18;
-
-    &__Inner {
-        background: $bg__products18__inner;
+        background: $bg_17;
     }
 }
 .Bg__Products18__Active {
     &.is-active {
-        background: $bg__products18__inner;
-    }
-}
-
-.Bg__Products19 {
-    background: $bg__products19;
-
-    &__Inner {
-        background: $bg__products19__inner;
+        background: $bg_18;
     }
 }
 .Bg__Products19__Active {
     &.is-active {
-        background: $bg__products19__inner;
+        background: $bg_19;
     }
 }
 
@@ -539,88 +376,6 @@ button{
             }
         }
     }
-
-    &__Category {
-        flex-wrap: wrap;
-        gap: 5px;
-        padding: 2%;
-        margin: 5px 0 5px;
-        align-items: stretch;
-
-        li {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
-            width: calc(20% - 4px);
-            overflow: hidden;
-
-            @include mediaS_L {
-                height: 53px;
-            }
-
-            @include mediaS_M {
-                height: 68px;
-            }
-
-            @include mediaS_S {
-                height: 83px;
-            }
-
-            button {
-                text-align: center;
-                border-radius: 5px;
-                box-sizing: border-box;
-                width: 100%;
-                font-size: 10px;
-                padding: 10px 0;
-                background-color: #f5f5f5;
-                color: $text-color-nav-item;
-                height: 100%;
-            }
-        }
-    }
-}
-
-// フィルター
-
-.Read__FilterItem {
-
-    li {
-        cursor: pointer;
-    }
-
-    li .is-active {
-        color: $text-color-white;
-
-        &:hover {
-            opacity: 1;
-            cursor: auto;
-        }
-
-        &.-category {
-
-            &::before {
-                opacity: 1;
-            }
-        }
-    }
-    .-category {
-        position: relative;
-
-        &::before {
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 5px;
-            background: inherit;
-            bottom: -5px;
-            //border-right: 1px solid #979795;
-            //border-left: 1px solid #979795;
-            opacity: 0;
-            transition: all .5s ease 0s;
-        }
-    }
 }
 
 .Read__Category {
@@ -647,44 +402,10 @@ button{
 
 .Products {
     margin-top: 30px;
-
-    h3 {
-        text-align: center;
-    }
-
-    h4 {
-        width: fit-content;
-        padding: 3px 20px;
-        margin: 10px 0 0;
-        border-radius: 5px 5px 0 0;
-    }
-    &__ItemCategory {
-        max-width: 580px;
+    img {
+        display: block;
         margin: 0 auto;
-        padding: 10px 10px;
-        border-radius: 0 5px 5px 5px;
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-
-        li {
-            width: calc(50% - 5px);
-            border-radius: 5px;
-            overflow: hidden;
-            background: #fff;
-            box-sizing: border-box;
-            //padding: 5px;
-
-            img {
-                display: block;
-                margin: 0 auto;
-                width: 100%;
-            }
-        }
-
-        &.sub_title_none {
-            border-radius: 5px;
-        }
+        width: 100%;
     }
 }
 
@@ -694,72 +415,6 @@ button{
 
     &.is-show {
         display: block;
-    }
-    
-    &__Medical {
-        &__Read {
-            background: #F18D00;
-            padding: 5px;
-
-            p {
-                font-size: 12px;
-                margin: 0;
-            }
-        }
-
-        &__Container {
-            display: flex;
-            margin-top: 10px;
-    
-            img {
-                width: 50px;
-                height: 50px;
-            }
-    
-            div {
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 1%;
-                    padding: 0;
-                    margin: 0;
-    
-                    li {
-                        box-sizing: border-box;
-                        width: 49.5%;
-                        border: 1px solid #5CB531;
-                        display: flex;
-                        background: #fff;
-                        gap: 3px;
-                        padding: 5px;
-
-                        @include mediaS_M {
-                            width: 100%;
-
-                            &:nth-child(2) {
-                                margin-top: 1%;
-                            }
-                        }
-                        
-                        &:nth-child(3),
-                        &:nth-child(4) {
-                            margin-top: 1%;
-                        }
-
-                        img {
-                            width: 30px;
-                            height: 30px;
-                        }
-
-                        p {
-                            color: #000;
-                            font-size: 10px;
-                            margin: 0;
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 
