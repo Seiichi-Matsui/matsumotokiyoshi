@@ -1,76 +1,22 @@
 @use "../common/vars" as *;
 @use "../common/mixins" as *;
 
+// labカラー設定
+// 外側
+$bg_1: #4E4347;
+// 内側
+$bg_2: #c9c9c9;
+
 // カラー指定
 // --------------------------------------------
-$bg-color: #FEFFED;
-$bg-color-section: #f7b3b7;
-$bg-color-contents: #DF312F;
+$bg-color: #f3f3f3;
+$bg-color-section: $bg_2;
+$bg-color-contents: $bg_1;
 
 $text-color-nav-item: #000;
 $text-color-red: #DF312F;
+$text-color-black: #2c2c2c;
 $text-color-white: #fff;
-
-// 商品カテゴリーカラー指定
-// --------------------------------------------
-
-// スペシャルプライス
-$bg_01: #DF312F;
-
-// シーズンケアアイテム
-$bg_02: #f2818e;
-
-// カウンセリング化粧品
-$bg_03: #cb6ca7;
-
-// 虫さされ・虫よけ
-$bg_04: #425BA8;
-
-// 害虫対策
-$bg_05: #00ADA9;
-
-// ビューティケア
-$bg_06: #ED5D7F;
-
-// 日用品
-$bg_07: #5CB531;
-
-// オーラルケア
-$bg_08: #0068B7;
-
-// メンズケア
-$bg_09: #005BAC;
-
-// フェミニンケア
-$bg_10: #E85298;
-
-// ベビー
-$bg_11: #005BAC;
-
-// 介護用品
-$bg_12: #005BAC;
-
-// 医薬品
-$bg_13: #00A0E9;
-
-// アイマスク
-$bg_14: #cb6ca7;
-
-// 医療衛生・コンタクト
-$bg_15: #00A0E9;
-
-// トイレ用品
-$bg_16: #7F1084;
-
-// 健康食品
-$bg_17: #009944;
-
-// ヘルシアの保健機能食品シリーズ
-$bg_18: #009944;
-
-// 食品
-$bg_19: #EF7A00;
-
 
 // Common
 // --------------------------------------------
@@ -91,7 +37,7 @@ section {
 
 
 h2 {
-    color: $text-color-red;
+    color: #2c2c2c;
 }
 
 h3,
@@ -173,110 +119,26 @@ button{
 // 商品カテゴリーごとのカラー指定
 // --------------------------------------------
 
-.Bg__Products01__Active {
-    &.is-active {
-        background: $bg_01;
-    }
-}
-
-.Bg__Products02__Active {
-    &.is-active {
-        background: $bg_02;
-    }
-}
-
-.Bg__Products03__Active {
-    &.is-active {
-        background: $bg_03;
-    }
-}
-
-.Bg__Products04__Active {
-    &.is-active {
-        background: $bg_04;
-    }
-}
-
-.Bg__Products05__Active {
-    &.is-active {
-        background: $bg_05;
-    }
-}
-
-.Bg__Products06__Active {
-    &.is-active {
-        background: $bg_06;
-    }
-}
-
-.Bg__Products07__Active {
-    &.is-active {
-        background: $bg_07;
-    }
-}
-
-.Bg__Products08__Active {
-    &.is-active {
-        background: $bg_08;
-    }
-}
-
-.Bg__Products09__Active {
-    &.is-active {
-        background: $bg_09;
-    }
-}
-.Bg__Products10__Active {
-    &.is-active {
-        background: $bg_10;
-    }
-}
-.Bg__Products11__Active {
-    &.is-active {
-        background: $bg_11;
-    }
-}
-.Bg__Products12__Active {
-    &.is-active {
-        background: $bg_12;
-    }
-}
-.Bg__Products13__Active {
-    &.is-active {
-        background: $bg_13;
-    }
-}
-.Bg__Products14__Active {
-    &.is-active {
-        background: $bg_14;
-    }
-}
-.Bg__Products15__Active {
-    &.is-active {
-        background: $bg_15;
-    }
-}
-.Bg__Products16__Active {
-    &.is-active {
-        background: $bg_16;
-    }
-}
-.Bg__Products17__Active {
-    &.is-active {
-        background: $bg_17;
-    }
-}
+.Bg__Products01__Active,
+.Bg__Products02__Active,
+.Bg__Products03__Active,
+.Bg__Products04__Active,
+.Bg__Products05__Active,
+.Bg__Products06__Active,
+.Bg__Products07__Active,
+.Bg__Products08__Active,
+.Bg__Products09__Active,
+.Bg__Products10__Active,
+.Bg__Products13__Active,
+.Bg__Products14__Active,
+.Bg__Products15__Active,
+.Bg__Products16__Active,
+.Bg__Products17__Active,
 .Bg__Products18__Active {
     &.is-active {
-        background: $bg_18;
+        background: $bg_1;
     }
 }
-.Bg__Products19__Active {
-    &.is-active {
-        background: $bg_19;
-    }
-}
-
 
 // --------------------------------------------
 
@@ -289,9 +151,9 @@ button{
     }
 }
 
-
 // --------------------------------------------
 
+.Lab,
 .Paypay {
     padding: 30px 10px 0;
     max-width: 620px;
@@ -330,7 +192,7 @@ button{
     padding-top: 20px;
 
     p {
-        color: #dd574b;
+        color: #2c2c2c;
         font-weight: 900;
         margin: 0 0 10px;
         text-align: center;
@@ -646,7 +508,7 @@ button{
             h5 {
                 margin: 0;
                 font-size: 16px;
-                color: $text-color-red;
+                color: #2c2c2c;
                 padding-bottom: 10px;
                 border-bottom: 3px solid $bg-color-contents;
             }
