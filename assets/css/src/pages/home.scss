@@ -26,11 +26,10 @@ $text-color-white: #fff;
     max-width: 640px;
     margin: 0 auto;
     background: $bg-color;
-    padding: 0 10px 10px;
 }
 
 section {
-    max-width: 620px;
+    max-width: 640px;
     margin: 0 auto;
     border-radius: 5px;
 }
@@ -289,100 +288,9 @@ button{
         display: block;
     }
 }
-
-.Caution {
-    margin: -10px 0 0;
-    border-radius: 0 0 5px 5px;
-
-    &__Contents {
-        text-align: center;
-        padding: 40px 0;
-
-        p {
-            font-size: 22px;
-            color: $text-color-red;
-            font-weight: 700;
-            margin: 0;
-        }
-
-        span {
-            font-size: 16px;
-            color: $text-color-red;
-            font-weight: 700;
-            margin-top: 10px;
-            display: block;
-        }
-
-        div {
-            margin-top: 30px;
-        }
-
-        &__MemorialSummer {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-
-            img {
-                width: 50px;
-                height: 50px;
-            }
-
-            span {
-                margin: 0;
-                position: relative;
-                padding-left: 20px;
-
-                &::before {
-                    position: absolute;
-                    content: '←';
-                    left: 0;
-                }
-            }
-        }
-
-        &__Point {
-
-            img {
-                width: 200px;
-            }
-
-            p {
-                font-size: 16px;
-                color: #000;
-
-                strong {
-                    display: inline;
-                    color: $text-color-red;
-                    font-size: 20px;
-                }
-            }
-        }
-
-        ul {
-            text-align: left;
-            padding-left: 0px;
-            margin-top: 40px;
-
-            li {
-                font-size: 14px;
-                position: relative;
-                padding-left: 15px;
-                margin-top: 5px;
-                font-weight: 700;
-
-                &::before {
-                    position: absolute;
-                    content: '※';
-                    left: 0;
-                }
-
-                &.-Red {
-                    color: $text-color-red;
-                }
-            }
-        }
-    }
-
+.CautionImage {
+    max-width: 620px;
+    margin: 0 auto;
 }
 
 // --------------------------------------------
